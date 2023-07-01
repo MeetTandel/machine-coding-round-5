@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Spaghetti Bolognese",
+        "cuisineType": "Italian",
+        "ingredients": "",
+        "instructions": "",
+        "imageURL": "https://picsum.photos/300/400?random=1"
+    },
+    {
+        "id": 2,
+        "name": "Chicken Stir Fry",
+        "cuisineType": "Chinese",
+        "ingredients": "",
+        "instructions": "",
+        "imageURL": "https://picsum.photos/300/400?random=2"
+    },
+    {
+        "id": 3,
+        "name": "Chocolate Chip Cookies",
+        "cuisineType": "American",
+        "ingredients": "",
+        "instructions": "",
+        "imageURL": "https://picsum.photos/300/400?random=3"
+    }
+]

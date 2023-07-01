@@ -1,0 +1,130 @@
+.home__container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 10px;
+}
+
+.archive-button {
+  color: black;
+  background-color: #fff;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recipes__container {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 7px;
+}
+.recipe {
+  border-radius: 8px;
+  text-align: left;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  position: relative;
+}
+.image__container img {
+  width: 180px;
+  height: 200px;
+}
+.recipe__button__container {
+  position: absolute;
+  background-color: white;
+  border-radius: 3px;
+  right: 0;
+  top: 10px;
+}
+.recipe__button__container > * {
+  margin: 0 5px;
+  cursor: pointer;
+}
+.recipe h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.recipe__details {
+  margin-top: 10px;
+}
+.recipe__details .detail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.recipe__details .detail h6,
+.recipe__details .detail p {
+  margin: 0;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.recipe__details .detail.clickable {
+  cursor: pointer;
+}
+.add-recipe {
+  margin: auto 0;
+  margin-left: 90px;
+  cursor: pointer;
+}
+
+.filter__container {
+  display: flex;
+  margin: 30px;
+  margin-left: 10px;
+  border: 1px solid #cecece;
+  border-radius: 7px;
+  padding: 2px;
+}
+
+.input__container {
+  padding-right: 15px;
+  border-right: 1px solid #cecece;
+  border-radius: 3px;
+}
+.input__container input {
+  padding: 7px;
+  border: none;
+  outline: none;
+}
+.radio__container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding-left: 15px;
+}
+.radio__container h6 {
+  margin: 0;
+  font-size: 1rem;
+}
+.radio__container label {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+input[type="radio"] {
+  accent-color: #953d96;
+}
+
+.create-recipe {
+  background-color: #cbcbcb;
+  color: #787878;
+}
+
+.modal .MuiPopover-paper {
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  max-height: calc(100% - 10px) !important;
+}

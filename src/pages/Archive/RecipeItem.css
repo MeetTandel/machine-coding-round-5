@@ -1,0 +1,21 @@
+.individual__recipe__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.recipe__item {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  padding: 10px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.details__container {
+    padding-left: 20px;
+    text-align: left;
+}
