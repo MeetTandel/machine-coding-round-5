@@ -10,18 +10,25 @@ const initialState = {
       ? JSON.parse(localStorage.getItem("recipes"))
       : recipes,
   filterType: "name",
-  searchValue: ""
+  searchValue: "",
 };
 
 export function RecipeProvider({ children }) {
   const [recipeState, dispatch] = useReducer(RecipeReducer, initialState);
 
+  const filteredRecipes =
+    recipeState.searchValue !== ""
+      ? recipeState.recipes.filter((item) =>
+          item[recipeState.filterType]
+            .toLowerCase()
+            .includes(recipeState.searchValue.toLowerCase())
+        )
+      : recipeState.recipes;
 
-  
   return (
     <RecipeContext.Provider
       value={{
-        recipes: recipeState.recipes,
+        recipes: filteredRecipes,
         filterType: recipeState.filterType,
         searchValue: recipeState.searchValue,
         dispatch,

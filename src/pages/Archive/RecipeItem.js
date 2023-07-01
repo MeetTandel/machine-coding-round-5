@@ -18,10 +18,20 @@ export const RecipeItem = () => {
           <img src={filteredRecipe.imageURL} />
         </div>
         <div className="details__container">
-          <h4 className="cuisine">Cuisine: {filteredRecipe.cuisineType}</h4>
-          <h4 className="cuisine">Ingredients: {filteredRecipe.ingredients}</h4>
-          <h4 className="cuisine">Instructions:</h4>
-          <h4> {filteredRecipe.instructions}</h4>
+          <div className="cuisine">
+            <span className="detail">Cuisine:</span> {filteredRecipe.cuisineType}
+          </div>
+          <div className="ingredients">
+            <span className="detail">Ingredients:</span> {filteredRecipe.ingredients}
+          </div>
+          <div className="instructions">
+            <span className="detail">Instructions:</span>
+          </div>
+          <ol>
+            {filteredRecipe.instructions.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ol>
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ export const Home = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [modalType, setModalType] = useState(null);
   const [selectedRecipe, setSelectedRecipe] = useState([]);
-  const { recipes, dispatch } = useRecipes();
+  const { recipes, filterType, searchValue, dispatch } = useRecipes();
 
   const handleClick = (event, type, recipe) => {
     setModalType(type);
@@ -46,6 +46,7 @@ export const Home = () => {
             <input
               className="filters"
               name="sort"
+              checked={filterType === "name"}
               type="radio"
               onClick={() =>
                 dispatch({ type: "SET_FILTER_TYPE", payload: "name" })
@@ -57,6 +58,7 @@ export const Home = () => {
             <input
               className="filters"
               name="sort"
+              checked={filterType === "ingredients"}
               type="radio"
               onClick={() =>
                 dispatch({ type: "SET_FILTER_TYPE", payload: "ingredients" })
@@ -68,6 +70,7 @@ export const Home = () => {
             <input
               className="filters"
               name="sort"
+              checked={filterType === "cuisineType"}
               type="radio"
               onClick={() =>
                 dispatch({ type: "SET_FILTER_TYPE", payload: "cuisineType" })

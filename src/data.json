@@ -3,24 +3,50 @@
         "id": 1,
         "name": "Spaghetti Bolognese",
         "cuisineType": "Italian",
-        "ingredients": "",
-        "instructions": "",
+        "ingredients": "2 Tbsp Olive oil2 Onions, chopped1/2 Garlic, chopped1 Kg Lamb/chicken (minced), 1/2 tsp Red pepper, 4-5 Tomatoes chopped, 1 Cup Tomato puree",
+        "instructions": [
+            "Heat some oil in the pan",
+            "Then add garlic, onion & fry it well",
+            "Then add the meat to it and mix it well",
+            "Add a dash of red pepper",
+            "Once the meat turns brown add the chopped tomatoes and the tomato puree",
+            "Now add the herbs Mix in the bay leaves, oregano and thyme",
+            "Add salt and pepper",
+            "Add the red wine",
+            "Mix all well Cover it and let it cook for 15-20 minutes",
+            "Once done, pour this Bolognese sauce over the spaghetti",
+            "Garnish with some cheese and serve"
+        ],
         "imageURL": "https://picsum.photos/300/400?random=1"
     },
     {
         "id": 2,
         "name": "Chicken Stir Fry",
         "cuisineType": "Chinese",
-        "ingredients": "",
-        "instructions": "",
+        "ingredients": "chicken thighs, vegetables, sweet and savory sauce, spices",
+        "instructions": [
+            "Cut the chicken thighs (or breast) into bite-sized pieces and cook",
+            "Cook vegetables until desired tenderness",
+            "Prepare easy sweet and savory stir fry sauce",
+            "Combine the chicken with the vegetables and sauce. Simmer until sauce thickens and ingredients are well incorporated"
+        ],
         "imageURL": "https://picsum.photos/300/400?random=2"
     },
     {
         "id": 3,
         "name": "Chocolate Chip Cookies",
         "cuisineType": "American",
-        "ingredients": "",
-        "instructions": "",
+        "ingredients": "wheat flour, sugar, leaveners, eggs, milk, chocolate, coconut, spices or nuts",
+        "instructions": [
+            "Everything You Need to Know. Here's a bite-size rundown of how to make a cookie",
+            "Sift Dry Ingredients",
+            "Cream Butter and Sugar",
+            "Beat in Eggs",
+            "Add Dry Ingredients to Wet",
+            "Fold in Chips or Nuts",
+            "Shape Cookies",
+            "Bake and Cool"
+        ],
         "imageURL": "https://picsum.photos/300/400?random=3"
     }
 ]

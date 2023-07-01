@@ -14,7 +14,7 @@ export const Recipe = ({ handleClose, selectedRecipe, type }) => {
     selectedRecipe?.ingredients ?? ""
   );
   const [instructions, setInstructions] = useState(
-    selectedRecipe?.instructions ?? ""
+    selectedRecipe?.instructions.toString() ?? ""
   );
   const [error, setError] = useState(null);
 
@@ -146,7 +146,7 @@ export const Recipe = ({ handleClose, selectedRecipe, type }) => {
                 name: recipeName,
                 cuisineType: cuisineType,
                 ingredients: ingredients,
-                instructions: instructions,
+                instructions: instructions.split(","),
                 imageURL: imageURL,
               },
             });

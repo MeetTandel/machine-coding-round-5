@@ -5,17 +5,35 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-weight: 600;
 }
 
 .recipe__item {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   display: flex;
   padding: 10px;
-  max-width: 700px;
+  max-width: 800px;
   width: 100%;
 }
 
 .details__container {
-    padding-left: 20px;
-    text-align: left;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.details__container > * {
+ margin-top: 10px;
+}
+
+h3 {
+  margin: 0;
+  margin-right: 7px
+}
+ol {
+  margin: 0;
+  padding-left: 15px;
+}
+.detail {
+  font-size: 1.1rem;
+  font-weight: 700;
 }
